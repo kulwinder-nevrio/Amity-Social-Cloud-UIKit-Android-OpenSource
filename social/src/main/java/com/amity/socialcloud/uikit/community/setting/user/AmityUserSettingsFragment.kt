@@ -115,7 +115,7 @@ class AmityUserSettingsFragment : RxFragment() {
         AmityAlertDialogUtil.showDialog(requireContext(),
             getString(R.string.amity_unfollow_error, viewModel.user?.getDisplayName() ?: ""),
             getString(R.string.amity_something_went_wrong_pls_try),
-            getString(R.string.amity_ok), null,
+            getString(com.amity.socialcloud.uikit.common.R.string.amity_ok), null,
             DialogInterface.OnClickListener { dialog, which ->
                 if (which == DialogInterface.BUTTON_POSITIVE) {
                     dialog.cancel()

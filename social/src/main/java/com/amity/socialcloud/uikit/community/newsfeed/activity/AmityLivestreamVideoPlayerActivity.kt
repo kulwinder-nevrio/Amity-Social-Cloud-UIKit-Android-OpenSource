@@ -12,7 +12,7 @@ import com.amity.socialcloud.uikit.community.newsfeed.viewmodel.AmityLiveStreamV
 import com.ekoapp.rxlifecycle.extension.untilLifecycleEnd
 import com.trello.rxlifecycle4.components.support.RxAppCompatActivity
 
-
+@androidx.annotation.OptIn(androidx.media3.common.util.UnstableApi::class)
 open class AmityLivestreamVideoPlayerActivity : RxAppCompatActivity() {
 
 
@@ -47,8 +47,8 @@ open class AmityLivestreamVideoPlayerActivity : RxAppCompatActivity() {
 
     private fun prepareToStream() {
         viewModel.checkStreamStatus(
-            onValidStatus = {isLive ->
-                if(isLive) {
+            onValidStatus = { isLive ->
+                if (isLive) {
                     binding.liveTextview.visibility = View.VISIBLE
                 } else {
                     binding.liveTextview.visibility = View.INVISIBLE
@@ -66,6 +66,7 @@ open class AmityLivestreamVideoPlayerActivity : RxAppCompatActivity() {
         binding.videoPlayer.enableStopWhenPause()
         binding.videoPlayer.play(viewModel.streamId)
     }
+
 
     private fun observeInvalidStream() {
         viewModel.observeInvalidStream(

@@ -50,7 +50,7 @@ class AmityRecentChatFragment private constructor() : Fragment(), AmityRecentCha
             this.addItemDecoration(
                 AmityRecentItemDecoration(
                     requireContext(),
-                    resources.getDimensionPixelSize(R.dimen.amity_padding_m2)
+                    resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_m2)
                 )
             )
         }

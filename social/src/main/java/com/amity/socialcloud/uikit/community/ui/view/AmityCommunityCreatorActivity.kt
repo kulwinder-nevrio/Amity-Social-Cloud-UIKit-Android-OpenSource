@@ -25,7 +25,7 @@ class AmityCommunityCreatorActivity : AppCompatActivity(), AmityToolBarClickList
 
     private fun setUpToolBar() {
         binding.communityToolbar.setLeftDrawable(
-            ContextCompat.getDrawable(this, R.drawable.amity_ic_cross)
+            ContextCompat.getDrawable(this, com.amity.socialcloud.uikit.common.R.drawable.amity_ic_cross)
         )
         binding.communityToolbar.setLeftString(getString(R.string.amity_create_community))
 

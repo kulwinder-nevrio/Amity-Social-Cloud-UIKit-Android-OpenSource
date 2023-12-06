@@ -18,6 +18,7 @@
         <item name="android:layout_marginStart">@dimen/amity_padding_m1</item>
         <item name="android:textSize">@dimen/amity_text_size_headline</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/amityColorBase</item>
+        <item name="android:fontFamily">@font/recoleta_medium</item>
+        <item name="android:textColor">@color/blue</item>
     </style>
 </resources>

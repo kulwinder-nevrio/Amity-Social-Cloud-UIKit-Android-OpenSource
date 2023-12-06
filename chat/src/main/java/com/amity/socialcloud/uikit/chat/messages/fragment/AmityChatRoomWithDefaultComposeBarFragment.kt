@@ -82,16 +82,10 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
             Manifest.permission.RECORD_AUDIO,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
         )
-    } else if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-        arrayOf(
-            Manifest.permission.RECORD_AUDIO,
-            Manifest.permission.READ_MEDIA_AUDIO
-        )
-    } else {
+    } else
         arrayOf(
             Manifest.permission.RECORD_AUDIO
         )
-    }
 
     private val recordPermission =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
@@ -154,11 +148,11 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
         binding.apply {
             etMessage.setShape(
                 null, null, null, null,
-                R.color.amityColorBase, R.color.amityColorBase, AmityColorShade.SHADE4
+                com.amity.socialcloud.uikit.common.R.color.amityColorBase, com.amity.socialcloud.uikit.common.R.color.amityColorBase, AmityColorShade.SHADE4
             )
             recordBackground.setShape(
                 null, null, null, null,
-                R.color.amityColorBase, R.color.amityColorBase, AmityColorShade.SHADE4
+                com.amity.socialcloud.uikit.common.R.color.amityColorBase, com.amity.socialcloud.uikit.common.R.color.amityColorBase, AmityColorShade.SHADE4
             )
             etMessage.setOnClickListener {
                 messageListViewModel.showComposeBar.set(false)
@@ -204,7 +198,7 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
             binding.connectionTexview.setBackgroundColor(
                 ContextCompat.getColor(
                     requireContext(),
-                    R.color.amityColorGrey
+                    com.amity.socialcloud.uikit.common.R.color.amityColorGrey
                 )
             )
         }
@@ -220,7 +214,7 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
         binding.loadingView.setBackgroundColor(
             ContextCompat.getColor(
                 requireContext(),
-                R.color.amityTranslucentBackground
+                com.amity.socialcloud.uikit.common.R.color.amityTranslucentBackground
             )
         )
         binding.loadingView.visibility = View.VISIBLE
@@ -287,14 +281,14 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
                 binding.chatToolBar.ivAvatar.setImageDrawable(
                     ContextCompat.getDrawable(
                         requireContext(),
-                        R.drawable.amity_ic_group
+                        com.amity.socialcloud.uikit.common.R.drawable.amity_ic_group
                     )
                 )
             } else {
                 binding.chatToolBar.ivAvatar.setImageDrawable(
                     ContextCompat.getDrawable(
                         requireContext(),
-                        R.drawable.amity_ic_user
+                        com.amity.socialcloud.uikit.common.R.drawable.amity_ic_user
                     )
                 )
             }
@@ -360,7 +354,7 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
                 AmityRecyclerViewItemDecoration(
                     0,
                     0,
-                    resources.getDimensionPixelSize(R.dimen.amity_padding_xs)
+                    resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_xs)
                 )
             )
             itemAnimator = null
@@ -369,7 +363,7 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
                 AmityColorPaletteUtil.getColor(
                     ContextCompat.getColor(
                         requireContext(),
-                        R.color.amityColorBase
+                        com.amity.socialcloud.uikit.common.R.color.amityColorBase
                     ), AmityColorShade.SHADE4
                 ), (percentage * 255).toInt()
             )
@@ -574,7 +568,7 @@ class AmityChatRoomWithDefaultComposeBarFragment : AmityPickerFragment(),
             activity?.findViewById(R.id.errorMessageContainer)
         )
         val textView = layout.findViewById<TextView>(R.id.tvMessage)
-        textView.setShape(null, null, null, null, R.color.amityColorBase, null, null)
+        textView.setShape(null, null, null, null, com.amity.socialcloud.uikit.common.R.color.amityColorBase, null, null)
         layout.showSnackBar("", Snackbar.LENGTH_SHORT)
     }
 

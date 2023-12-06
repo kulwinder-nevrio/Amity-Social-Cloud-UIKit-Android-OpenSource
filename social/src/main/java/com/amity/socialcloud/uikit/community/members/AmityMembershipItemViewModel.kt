@@ -58,7 +58,7 @@ class AmityMembershipItemViewModel : AmityBaseViewModel() {
                 itemList.add(
                     AmityMenuItem(
                         AmityConstants.ID_REMOVE_USER,
-                        context.getString(R.string.amity_remove_from_community),
+                        context.getString(com.amity.socialcloud.uikit.common.R.string.amity_remove_from_community),
                         true
                     )
                 )
@@ -108,7 +108,7 @@ class AmityMembershipItemViewModel : AmityBaseViewModel() {
                 itemList.add(
                     AmityMenuItem(
                         AmityConstants.ID_REMOVE_USER,
-                        context.getString(R.string.amity_remove_from_community)
+                        context.getString(com.amity.socialcloud.uikit.common.R.string.amity_remove_from_community)
                     )
                 )
             }

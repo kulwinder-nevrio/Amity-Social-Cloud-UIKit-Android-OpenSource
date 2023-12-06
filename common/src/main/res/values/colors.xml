@@ -19,13 +19,13 @@
     <color name="amityColorGrey">#B8B8B8</color>
     <color name="amityColorGreen">#57CA6A</color>
 
-
-
+    <color name="color_primary">#FFEAA794</color>
+    <color name="blue">#FF351F65</color>
     <color name="upstraColorPrimary">#1054DE</color>
     <color name="upstraColorSecondary">#292B32</color>
     <color name="upstraColorAlert">#FA4D30</color>
     <color name="upstraColorHighlight">#1054DE</color>
-    <color name="upstraColorBase">#292B32</color>
+    <color name="upstraColorBase">#351F65</color>
     <color name="upstraColorBaseInverse">#FFFFFF</color>
     <color name="upstraMessageBubble">#1054DE</color>
     <color name="upstraMessageBubbleInverse">#EBECEF</color>

@@ -34,7 +34,7 @@ class AmityRecentChatViewHolder(
             if (data.getDisplayName().isNotEmpty()) {
                 name.text = data.getDisplayName()
             } else {
-                name.text = itemView.context.getString(R.string.amity_anonymous)
+                name.text = itemView.context.getString(com.amity.socialcloud.uikit.common.R.string.amity_anonymous)
             }
             setUpAvatarView(data)
             setupUnreadCount(data)
@@ -74,7 +74,7 @@ class AmityRecentChatViewHolder(
 
         avatar.setBackgroundColor(
             AmityColorPaletteUtil.getColor(
-                ContextCompat.getColor(itemView.context, R.color.amityColorPrimary),
+                ContextCompat.getColor(itemView.context, com.amity.socialcloud.uikit.common.R.color.amityColorPrimary),
                 AmityColorShade.SHADE3
             )
         )
@@ -98,9 +98,9 @@ class AmityRecentChatViewHolder(
     }
 
     private fun setupUnreadCount(data: AmityChannel) {
-        if (data.getDefaultSubChannelUnreadCount() > 0) {
+        if (data.getUnreadCount() > 0) {
             unreadCount.visibility = View.VISIBLE
-            unreadCount.text = data.getDefaultSubChannelUnreadCount().toString()
+            unreadCount.text = data.getUnreadCount().toString()
         } else {
             unreadCount.visibility = View.GONE
         }

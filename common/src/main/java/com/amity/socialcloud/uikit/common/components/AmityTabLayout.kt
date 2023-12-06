@@ -2,6 +2,7 @@ package com.amity.socialcloud.uikit.common.components
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TableLayout
@@ -44,7 +45,7 @@ class AmityTabLayout : ConstraintLayout {
         viewPager2 = rootView.findViewById(R.id.viewpager)
         val divider = rootView.findViewById<View>(R.id.divider)
         divider.setBackgroundColor(
-            ContextCompat.getColor(context, R.color.amityColorBase),
+            ContextCompat.getColor(context, R.color.amityColorPrimary),
             AmityColorShade.SHADE4
         )
     }
@@ -65,7 +66,6 @@ class AmityTabLayout : ConstraintLayout {
         TabLayoutMediator(tabLayout, viewPager2) { tab, position ->
             tab.text = mAdapter.getTitle(position)
         }.attach()
-
     }
 
     fun setPageChangeListener(callback:  ViewPager2.OnPageChangeCallback) {
@@ -76,11 +76,12 @@ class AmityTabLayout : ConstraintLayout {
         viewPager2.offscreenPageLimit = limit
     }
 
-    fun switchTab(position: Int) {
+    fun switchTab(position: Int, smoothScroll: Boolean = true) {
         try {
-            viewPager2.setCurrentItem(position, true)
+            //tabLayout.selectTab(tabLayout.getTabAt(position))
+            viewPager2.setCurrentItem(position, smoothScroll)
         } catch (ex: Exception) {
-
+            Log.e(this.javaClass.simpleName, "switchTab: ${ex.message}", ex)
         }
     }
 

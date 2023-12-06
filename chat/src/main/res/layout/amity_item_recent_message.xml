@@ -31,6 +31,7 @@
             android:layout_marginStart="@dimen/amity_padding_m1"
             android:drawablePadding="@dimen/amity_padding_xxs"
             android:maxWidth="147dp"
+            textColorShade="@{AmityColorShade.SHADE1}"
             app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
             app:layout_constraintEnd_toStartOf="@id/tvMemberCount"
             app:layout_constraintStart_toEndOf="@id/ivAvatar"

@@ -8,12 +8,12 @@ sealed class AmitySettingsItem {
     class Header(val title: Int) : AmitySettingsItem()
 
     class TextContent(
-            val icon: Int? = null,
-            val title: Int,
-            val description: Int? = null,
-            val titleTextColor: Int = R.color.upstraColorBase,
-            val isTitleBold: Boolean = false,
-            val callback: () -> Unit) : AmitySettingsItem()
+        val icon: Int? = null,
+        val title: Int,
+        val description: Int? = null,
+        val titleTextColor: Int = com.amity.socialcloud.uikit.common.R.color.upstraColorBase,
+        val isTitleBold: Boolean = false,
+        val callback: () -> Unit) : AmitySettingsItem()
 
     class NavigationContent(
             val icon: Int? = null,

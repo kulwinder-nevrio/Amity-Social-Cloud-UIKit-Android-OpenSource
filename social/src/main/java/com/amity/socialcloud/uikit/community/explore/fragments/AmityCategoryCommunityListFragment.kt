@@ -77,7 +77,7 @@ class AmityCategoryCommunityListFragment : AmityBaseFragment(),
 
     private fun initView() {
         val itemDecorSpace =
-            AmityRecyclerViewItemDecoration(resources.getDimensionPixelSize(R.dimen.amity_padding_xs))
+            AmityRecyclerViewItemDecoration(resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_xs))
         binding.rvCommunity.layoutManager = LinearLayoutManager(requireContext())
         binding.rvCommunity.adapter = adapter
         binding.rvCommunity.addItemDecoration(itemDecorSpace)

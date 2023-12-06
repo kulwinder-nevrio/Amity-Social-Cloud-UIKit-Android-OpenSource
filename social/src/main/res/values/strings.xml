@@ -104,7 +104,7 @@
     <string name="amity_message">Message</string>
     <string name="amity_join">Join</string>
     <string name="amity_join_community_message">Join community to interact with all posts</string>
-    <string name="amity_timeline">TIMELINE</string>
+    <string name="amity_timeline">Timeline</string>
     <string name="amity_no_post">No posts yet</string>
     <string name="amity_comment_deleted_message">This comment has been deleted</string>
     <string name="amity_select_category">Select category</string>
@@ -343,5 +343,7 @@
     <string name="amity_delete_poll">Delete Poll</string>
     <string name="amity_close_poll">Close Poll</string>
     <string name="amity_reaction_separator">•</string>
+    <string name="amity_downloading_file">Downloading file</string>
+    <string name="amity_ok">ok</string>
 
 </resources>

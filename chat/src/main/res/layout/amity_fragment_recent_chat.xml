@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <import type="com.amity.socialcloud.uikit.common.common.views.AmityColorShade" />
     </data>
 
@@ -40,8 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/amity_no_conversations"
-                    android:textColor="@color/amityColorBase"
-                    app:textColorShade="@{AmityColorShade.SHADE3}" />
+                    android:textColor="@color/amityColorBase" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

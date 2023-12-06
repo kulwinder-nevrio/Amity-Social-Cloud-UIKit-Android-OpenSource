@@ -23,31 +23,33 @@
         <TextView
             android:id="@+id/tvEmptyGlobalFeed"
             style="@style/AmityTextStyleHeadline"
-            textColorShade="@{AmityColorShade.SHADE2}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/amity_padding_s"
             android:text="@string/amity_empty_feed"
-            android:textColor="@color/amityColorBase" />
+            android:textSize="30sp"
+            android:textColor="#351F65" />
 
         <TextView
             android:id="@+id/tvFindCommunity"
             style="@style/AmityTextStyleBody"
-            textColorShade="@{AmityColorShade.SHADE2}"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/amity_find_community"
-            android:textColor="@color/amityColorBase" />
+            android:textSize="14sp"
+            android:textColor="#351F65" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnExplore"
             style="@style/AmityMaterialButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/amity_padding_s"
             android:paddingHorizontal="@dimen/amity_padding_m3"
             android:text="@string/amity_explore_community"
-            app:icon="@drawable/amity_ic_search"
+            android:textSize="18.sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
             app:iconGravity="textStart" />
 
         <TextView
@@ -57,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/amity_padding_m1"
             android:text="@string/amity_create_community"
-            android:textColor="@color/amityColorPrimary" />
+            android:textColor="#351F65" />
 
     </LinearLayout>
 </layout>

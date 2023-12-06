@@ -28,7 +28,7 @@ class AmityMyCommunityListViewHolder(
             binding?.executePendingBindings()
             binding?.tvName?.text = itemView.context.getString(R.string.amity_see_all)
             binding?.ivAvatar?.setBackgroundColor(null, AmityColorShade.SHADE4)
-            binding?.ivAvatar?.setImageResource(R.drawable.amity_ic_arrow_back)
+            binding?.ivAvatar?.setImageResource(com.amity.socialcloud.uikit.common.R.drawable.amity_ic_arrow_back)
             binding?.ivAvatar?.rotation = 180F
         } else {
             binding?.ekoCommunity = data

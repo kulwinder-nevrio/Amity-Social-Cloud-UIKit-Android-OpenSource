@@ -133,8 +133,8 @@ class AmityPostTargetPickerFragment : AmityBaseFragment(),
             this.adapter = communityAdapter
             addItemDecoration(
                     AmityRecyclerViewItemDecoration(
-                            resources.getDimensionPixelSize(R.dimen.amity_padding_xs),
-                            0, resources.getDimensionPixelSize(R.dimen.amity_padding_xs)
+                            resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_xs),
+                            0, resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_xs)
                     )
             )
             hasFixedSize()

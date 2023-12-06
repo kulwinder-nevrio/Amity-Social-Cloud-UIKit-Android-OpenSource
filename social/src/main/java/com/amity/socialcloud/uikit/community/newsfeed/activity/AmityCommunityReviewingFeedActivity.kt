@@ -17,7 +17,7 @@ const val PARAM_COMMUNITY_ID = "PARAM_COMMUNITY_ID"
 class AmityCommunityReviewingFeedActivity : AmityBaseToolbarFragmentContainerActivity() {
 
     override fun initToolbar() {
-        getToolBar()?.setLeftDrawable(ContextCompat.getDrawable(this, R.drawable.amity_ic_arrow_back))
+        getToolBar()?.setLeftDrawable(ContextCompat.getDrawable(this, com.amity.socialcloud.uikit.common.R.drawable.amity_ic_arrow_back))
     }
 
     override fun leftIconClick() {

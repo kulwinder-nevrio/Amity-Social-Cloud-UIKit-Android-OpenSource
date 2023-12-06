@@ -18,7 +18,7 @@ import com.amity.socialcloud.uikit.community.newsfeed.model.FileUploadState
 class AmityPostItemAttachmentViewHolder(itemView: View) : AmityPostContentViewHolder(itemView) {
 
     private val rvAttachment = itemView.findViewById<RecyclerView>(R.id.rvAttachment)
-    private val space = itemView.context.resources.getDimensionPixelSize(R.dimen.amity_padding_xs)
+    private val space = itemView.context.resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_xs)
     private val itemDecor = AmitySpacesItemDecoration(0, 0, 0, space)
     private var files: List<AmityFile> = emptyList()
 

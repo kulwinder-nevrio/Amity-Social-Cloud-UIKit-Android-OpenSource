@@ -21,9 +21,9 @@ import com.amity.socialcloud.uikit.feed.settings.AmityPostShareClickListener
 import com.amity.socialcloud.uikit.social.AmitySocialUISettings
 import io.reactivex.rxjava3.core.Flowable
 
-class AmityGlobalFeedFragment : AmityFeedFragment() {
+open class AmityGlobalFeedFragment : AmityFeedFragment() {
 
-    private val communityHomeViewModel: AmityCommunityHomeViewModel by activityViewModels()
+    val communityHomeViewModel: AmityCommunityHomeViewModel by activityViewModels()
 
     override fun getViewModel(): AmityGlobalFeedViewModel {
         return ViewModelProvider(requireActivity()).get(AmityGlobalFeedViewModel::class.java)

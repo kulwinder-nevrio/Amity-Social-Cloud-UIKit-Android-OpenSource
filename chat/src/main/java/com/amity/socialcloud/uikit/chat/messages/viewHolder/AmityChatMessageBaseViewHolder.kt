@@ -40,7 +40,7 @@ abstract class AmityChatMessageBaseViewHolder(
         return if (item.getCreatorId() == AmityCoreClient.getUserId()) {
             "ME"
         } else {
-            item.getCreator()?.getDisplayName() ?: itemView.context.getString(R.string.amity_anonymous)
+            item.getCreator()?.getDisplayName() ?: itemView.context.getString(com.amity.socialcloud.uikit.common.R.string.amity_anonymous)
         }
     }
 }

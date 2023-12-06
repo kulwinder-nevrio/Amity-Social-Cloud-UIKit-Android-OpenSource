@@ -372,7 +372,7 @@ class AmityLiveStreamPostCreatorFragment : RxFragment() {
             .maxSelectable(1)
             .restrictOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED)
             .imageEngine(GlideEngine())
-            .theme(R.style.AmityImagePickerTheme)
+            .theme(com.amity.socialcloud.uikit.common.R.style.AmityImagePickerTheme)
             .forResult(AmityConstants.PICK_IMAGES)
     }
 
@@ -438,7 +438,7 @@ class AmityLiveStreamPostCreatorFragment : RxFragment() {
                     }
                 ),
                 BottomSheetMenuItem(
-                    colorResId = R.color.amityColorRed,
+                    colorResId = com.amity.socialcloud.uikit.common.R.color.amityColorRed,
                     titleResId = R.string.amity_video_stream_thumbnail_remove,
                     action = {
                         removeThumbnail()

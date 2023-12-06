@@ -1,6 +1,15 @@
 apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    namespace 'com.amity.socialcloud.uikit.chat'
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+}
 
 dependencies {
     implementation project(path: ':common')

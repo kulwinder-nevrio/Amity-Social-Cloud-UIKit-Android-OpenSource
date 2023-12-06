@@ -57,6 +57,10 @@ class AmityToolBar : MaterialToolbar {
         binding.leftString = value
     }
 
+    fun setCenterString(value: String) {
+        binding.centerString = value
+    }
+
     fun setLeftDrawable(value: Drawable?, color: Int? = null) {
         binding.leftDrawable = value
         if (color != null && binding.leftDrawable != null) {

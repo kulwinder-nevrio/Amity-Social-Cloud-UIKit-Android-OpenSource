@@ -24,7 +24,6 @@ class AmityChatHomePageFragment private constructor() : Fragment() {
 
     private var _binding: AmityFragmentChatHomePageBinding? = null
     private val binding get() = _binding!!
-
     private val selectMembers = registerForActivityResult(AmityPickMemberContract()) { userList ->
         if (userList.isNotEmpty()) {
             view?.showSnackBar(msg = getString(R.string.amity_channel_creation_loading))
@@ -117,7 +116,7 @@ class AmityChatHomePageFragment private constructor() : Fragment() {
         _binding = null
     }
 
-    class Builder internal constructor() {
+    class Builder() {
         private var recentChatFragmentDelegate: AmityRecentChatFragmentDelegate? = null
 
         fun build(activity: AppCompatActivity): AmityChatHomePageFragment {

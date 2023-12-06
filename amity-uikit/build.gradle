@@ -1,7 +1,13 @@
 apply from: "../buildsystem/activity.gradle"
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-kapt'
 
 android {
+    namespace 'com.amity.socialcloud.uikit'
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
     buildTypes {
         release {
             consumerProguardFiles 'amity-proguard-rules.pro'

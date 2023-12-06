@@ -123,11 +123,11 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
         binding.apply {
             etMessage.setShape(
                 null, null, null, null,
-                R.color.amityColorBase, R.color.amityColorBase, AmityColorShade.SHADE4
+                com.amity.socialcloud.uikit.common.R.color.amityColorBase, com.amity.socialcloud.uikit.common.R.color.amityColorBase, AmityColorShade.SHADE4
             )
             recordBackground.setShape(
                 null, null, null, null,
-                R.color.amityColorBase, R.color.amityColorBase, AmityColorShade.SHADE4
+                com.amity.socialcloud.uikit.common.R.color.amityColorBase, com.amity.socialcloud.uikit.common.R.color.amityColorBase, AmityColorShade.SHADE4
             )
             etMessage.setOnClickListener {
                 messageListViewModel.showComposeBar.set(false)
@@ -169,7 +169,7 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
         if (essentialViewModel.enableConnectionBar) {
             binding.connectionView.visibility = View.VISIBLE
             binding.connectionTexview.setText(R.string.amity_no_internet)
-            binding.connectionTexview.setBackgroundColor(resources.getColor(R.color.amityColorGrey))
+            binding.connectionTexview.setBackgroundColor(resources.getColor(com.amity.socialcloud.uikit.common.R.color.amityColorGrey))
         }
     }
 
@@ -180,7 +180,7 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
     }
 
     private fun presentChatRefreshLoadingView() {
-        binding.loadingView.setBackgroundColor(resources.getColor(R.color.amityTranslucentBackground))
+        binding.loadingView.setBackgroundColor(resources.getColor(com.amity.socialcloud.uikit.common.R.color.amityTranslucentBackground))
         binding.loadingView.visibility = View.VISIBLE
     }
 
@@ -256,14 +256,14 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
                 binding.chatToolBar.ivAvatar.setImageDrawable(
                     ContextCompat.getDrawable(
                         requireContext(),
-                        R.drawable.amity_ic_group
+                        com.amity.socialcloud.uikit.common.R.drawable.amity_ic_group
                     )
                 )
             } else {
                 binding.chatToolBar.ivAvatar.setImageDrawable(
                     ContextCompat.getDrawable(
                         requireContext(),
-                        R.drawable.amity_ic_user
+                        com.amity.socialcloud.uikit.common.R.drawable.amity_ic_user
                     )
                 )
             }
@@ -327,7 +327,7 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
                 AmityRecyclerViewItemDecoration(
                     0,
                     0,
-                    resources.getDimensionPixelSize(R.dimen.amity_padding_xs)
+                    resources.getDimensionPixelSize(com.amity.socialcloud.uikit.common.R.dimen.amity_padding_xs)
                 )
             )
             this.itemAnimator = null
@@ -336,7 +336,7 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
                 AmityColorPaletteUtil.getColor(
                     ContextCompat.getColor(
                         requireContext(),
-                        R.color.amityColorBase
+                        com.amity.socialcloud.uikit.common.R.color.amityColorBase
                     ), AmityColorShade.SHADE4
                 ), (percentage * 255).toInt()
             )
@@ -498,7 +498,7 @@ class AmityChatRoomWithTextComposeBarFragment() : AmityPickerFragment(),
             activity?.findViewById(R.id.errorMessageContainer)
         )
         val textView = layout.findViewById<TextView>(R.id.tvMessage)
-        textView.setShape(null, null, null, null, R.color.amityColorBase, null, null)
+        textView.setShape(null, null, null, null, com.amity.socialcloud.uikit.common.R.color.amityColorBase, null, null)
         layout.showSnackBar("", Snackbar.LENGTH_SHORT)
     }
 

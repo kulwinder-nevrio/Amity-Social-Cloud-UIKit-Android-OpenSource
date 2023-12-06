@@ -160,7 +160,7 @@ class AmityCommunityPageFragment : RxFragment(),
     }
 
     private fun setUpViewListeners() {
-        binding.refreshLayout.setColorSchemeResources(R.color.amityColorPrimary)
+        binding.refreshLayout.setColorSchemeResources(com.amity.socialcloud.uikit.common.R.color.amityColorPrimary)
         binding.refreshLayout.setOnRefreshListener {
             refreshCommunity()
         }
@@ -198,7 +198,7 @@ class AmityCommunityPageFragment : RxFragment(),
         val postCreationOptions =
             arrayListOf(
                 BottomSheetMenuItem(
-                    iconResId = R.drawable.ic_amity_ic_post_create,
+                    iconResId = com.amity.socialcloud.uikit.common.R.drawable.ic_amity_ic_post_create,
                     titleResId = R.string.amity_post,
                     action = {
                         createGenericPost.launch(viewModel.communityId)
@@ -206,7 +206,7 @@ class AmityCommunityPageFragment : RxFragment(),
                     }
                 ),
                 BottomSheetMenuItem(
-                    iconResId = R.drawable.ic_amity_ic_live_stream_create,
+                    iconResId = com.amity.socialcloud.uikit.common.R.drawable.ic_amity_ic_live_stream_create,
                     titleResId = R.string.amity_video_stream_title,
                     action = {
                         createLiveStreamPost.launch(viewModel.communityId)
@@ -214,7 +214,7 @@ class AmityCommunityPageFragment : RxFragment(),
                     }
                 ),
                 BottomSheetMenuItem(
-                    iconResId = R.drawable.ic_amity_ic_poll_create,
+                    iconResId = com.amity.socialcloud.uikit.common.R.drawable.ic_amity_ic_poll_create,
                     titleResId = R.string.amity_general_poll,
                     action = {
                         createPollPost.launch(viewModel.communityId)
