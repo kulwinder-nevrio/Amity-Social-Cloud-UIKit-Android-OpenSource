@@ -267,7 +267,7 @@
     <string name="amity_video_stream_title">Livestream</string>
     <string name="amity_video_stream_live">Live</string>
     <string name="amity_video_stream_recorded">Recorded</string>
-    <string name="amity_video_stream_ended_title">This livestream has ended.</string>
+    <string name="amity_video_stream_ended_title">Den här livestreamen har avslutats</string>
     <string name="amity_video_stream_ended_description">Playback will be available for you to watch shortly.</string>
     <string name="amity_video_stream_thumbnail_change">Change cover image</string>
     <string name="amity_video_stream_thumbnail_remove">Delete cover image</string>
